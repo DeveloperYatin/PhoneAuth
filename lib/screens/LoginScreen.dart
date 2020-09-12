@@ -1,5 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:phoneauth/screens/HomeScreen.dart';
+import 'package:phoneauth/screens/GoogleLoginScreen.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -21,7 +21,7 @@ class LoginScreen extends StatelessWidget {
 
           if(user != null){
             Navigator.push(context, MaterialPageRoute(
-              builder: (context) => HomeScreen(user: user,)
+              builder: (context) => GoogleLoginScreen(user: user,)
             ));
           }else{
             print("Error");
@@ -62,7 +62,7 @@ class LoginScreen extends StatelessWidget {
 
                       if(user != null){
                         Navigator.push(context, MaterialPageRoute(
-                            builder: (context) => HomeScreen(user: user,)
+                            builder: (context) => GoogleLoginScreen(user: user,)
                         ));
                       }else{
                         print("Error");

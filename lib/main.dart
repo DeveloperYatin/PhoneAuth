@@ -1,4 +1,4 @@
-import 'package:firebase_user_login/screens/LoginScreen.dart';
+import 'package:phoneauth/screens/LoginScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
